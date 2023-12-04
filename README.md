@@ -110,7 +110,7 @@ For a post-mortem, or simply quenching curiosity, a log file is generated with w
 A GUI front-end to make things easy
 
 ## Known Issues
-* Subtitle codec not supported error on certain files causing the conversion to fail. For example, with some codecs being compatible only with `mp4` format. This is an inherent flaw with the codec format itself, and the only workaround is to convert the offending subtitle to `srt` format. If one stumbles on this, comment the statement below, and uncomment the third line below.
+* Subtitle codec not supported error on certain files causing the conversion to fail. For example, with some codecs being compatible only with `mp4` format. This is an inherent flaw with the codec format itself, and the only workaround is to convert the offending subtitle to `srt` format. If one stumbles on this, comment the first statement below, and uncomment the third line instead.
 
 ```Python
 	options_ffmpeg = ("-hide_banner", "-i", input, "-codec", "copy", output)
