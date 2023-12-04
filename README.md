@@ -98,7 +98,7 @@ If you'd like a tooltip notification on Windows 10 and above, install [win10toas
 ```
 ## Options
 * `--container`, or `-c`: Specify which of the supported formats the source is to be converted to
-* `--help`, or `-h`: Help on command line options
+* `--help`, or `-h`: Usage help for command line options
 
 ## Reporting a Summary
 At the end of its execution, the script presents a summary of files converted, failures (if any) and time taken. This comes in handy when dealing with a large number of files.
