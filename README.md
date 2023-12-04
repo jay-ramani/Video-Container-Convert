@@ -1,7 +1,7 @@
 # Video Container Convert
 
 ## What This Is
-A Python script that converts source video file's container to a compatible target container.
+A Python script that converts a source video file's container to a compatible target container.
 
 At present, the script converts any of the below source formats to [Matroska](https://en.wikipedia.org/wiki/Matroska):
 * AVI
