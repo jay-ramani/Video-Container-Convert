@@ -110,7 +110,14 @@ For a post-mortem, or simply quenching curiosity, a log file is generated with w
 A GUI front-end to make things easy
 
 ## Known Issues
-*
+* Subtitle codec not supported error on certain files causing the conversion to fail. For example, with some codecs being compatible only with `mp4` format. This is an inherent flaw with the codec format itself, and the only workaround is to convert the offending subtitle to `srt` format. If one stumbles on this, comment the statement below, and uncomment the third line below.
+
+```Python
+	options_ffmpeg = ("-hide_banner", "-i", input, "-codec", "copy", output)
+	# In case we get subtitle codec not supported errors, use the arguments below to convert to srt
+	#options_ffmpeg = ("-hide_banner", "-i", input, "-codec", "copy", "-c:s", "srt", output)
+```
+The above is a snippet from the function `dict_tool_metadata_get()`.
 
 ## Testing and Reporting Bugs
 The tagger has been tested on Windows 10, 11 and on Manjaro Linux (XFCE). Would be great if someone can help with testing on other platforms and provide feedback.
