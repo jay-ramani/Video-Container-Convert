@@ -91,7 +91,7 @@ If you'd like a tooltip notification on Windows 10 and above, install [win10toas
 ```
   python "G:\My Drive\Projects\Video Container Convert\video_container_convert.py" --container mkv <path to a directory containing source files> <path to another directory...> <you get the picture!>
 ```
-### Tagging Single Files
+### Converting Single Files
   If you'd prefer going Hans Solo, use the command below to act on a single file:
 ```
   python "G:\My Drive\Projects\Video Container Convert\video_container_convert.py" --container mkv <path to the source file>
